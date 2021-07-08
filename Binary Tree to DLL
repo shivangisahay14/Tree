@@ -1,0 +1,26 @@
+void BTtoDLL(Node *root,Node *&head,Node *&tail){
+        if(!root) return;
+        
+        BTtoDLL(root->left,head,tail);
+        if(!head){
+            head=root;
+        }
+        else{
+            tail->right=root;
+            root->left=tail;
+        }
+        tail=root;
+        
+        BTtoDLL(root->right,head,tail);
+        
+    }
+    //Function to convert binary tree to doubly linked list and return it.
+    Node * bToDLL(Node *root)
+    {
+        if(!root) return NULL;
+        Node *head=NULL,*tail=NULL;
+        BTtoDLL(root,head,tail);
+        
+        return head;
+        
+    }
