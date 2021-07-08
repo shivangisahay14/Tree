@@ -1,0 +1,14 @@
+int transform(Node *node){
+        
+         if(!node) return 0;
+        
+        int lsum=transform(node->left);
+        int rsum=transform(node->right);
+        
+        int val=lsum+rsum+node->data;
+        
+        node->data=lsum+rsum;
+        
+        return val;
+        
+    }
