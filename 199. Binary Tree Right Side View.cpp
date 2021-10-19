@@ -1,7 +1,7 @@
  vector<int> rightSideView(TreeNode* root) {
         
-            vector<int>ans;
-            queue<TreeNode*>q;
+        vector<int>ans;
+        queue<TreeNode*>q;
 
         if(root==NULL) return ans;
 
