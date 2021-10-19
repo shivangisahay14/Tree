@@ -38,7 +38,7 @@
 
         
     }
-using 2 stacks:
+//using 2 stacks:
 vector <int> zigZagTraversal(Node* root)
 {
     vector<int>ans;
