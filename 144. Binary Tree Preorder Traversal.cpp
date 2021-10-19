@@ -1,4 +1,4 @@
-Recursive:
+//Recursive:
 
 void preorder(Node *root,vector<int> &ans){
     if(!root){
@@ -17,7 +17,7 @@ vector <int> preorder(Node* root)
     return ans;
 }
 
-Iterative:
+//Iterative:
 
 vector<int> preOrder(Node* root)
 {
